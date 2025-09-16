@@ -1,7 +1,7 @@
 services:
   # FastAPI ML Prediction API
   stock-api:
-    image: leorigasaki535/stock-prediction-api:latest
+    image: iyakubovich3/stock-prediction-api:latest
     container_name: stock-prediction-api
     ports:
       - "8000:8000"
@@ -17,7 +17,7 @@ services:
 
   # Streamlit Interactive Dashboard  
   stock-dashboard:
-    image: leorigasaki535/stock-prediction-dashboard:latest
+    image: iyakubovich3/stock-prediction-dashboard:latest
     container_name: stock-prediction-dashboard
     ports:
       - "8501:8501"
