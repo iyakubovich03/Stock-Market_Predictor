@@ -165,15 +165,6 @@ A comprehensive, production-ready machine learning system designed to predict st
 - **4GB+ RAM** for ML model loading
 - **Ports 8000 & 8501** available
 
-### Development Setup (Optional)
-```bash
-git clone https://github.com/LeoRigasaki/Stock-Engine.git
-cd Stock-Engine
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
 ### Local Development
 ```bash
 docker-compose up
@@ -181,28 +172,6 @@ docker-compose up
 
 ## 📊 Usage Examples
 
-### **API Usage**
-```python
-import requests
-
-# Get stock predictions
-response = requests.post(
-    "http://localhost:8000/predict",
-    json={"symbols": ["AAPL", "AMZN", "NVDA"]},
-    headers={"Authorization": "Bearer demo_key_12345"}
-)
-predictions = response.json()
-
-# Optimize portfolio
-portfolio = requests.post(
-    "http://localhost:8000/portfolio/optimize",
-    json={
-        "symbols": ["AAPL", "AMZN", "NVDA", "MSFT"],
-        "optimization_method": "markowitz",
-        "target_return": 0.12
-    }
-)
-```
 
 ### **Dashboard Features**
 - **Live Predictions**: Real-time stock analysis with confidence scoring
@@ -269,45 +238,8 @@ This project demonstrates:
 - Real-time market analysis and monitoring
 - Automated trading system foundation
 
-## 🤝 Professional Usage
-
-### **For Hiring Managers**
-```bash
-# One-command demo
-docker run -p 8501:8501 -e SERVICE_TYPE=dashboard leorigasaki535/stock-prediction-dashboard:latest
-# Visit http://localhost:8501 for interactive demo
-```
-
-### **For Technical Evaluation**
-- **GitHub Repository**: https://github.com/LeoRigasaki/Stock-Engine
-- **Docker Hub**: https://hub.docker.com/r/leorigasaki535/stock-prediction-dashboard
-- **Live API Demo**: http://localhost:8000/docs (after running API container)
-
-## 📝 License and Disclaimer
-
-This project is for educational and portfolio demonstration purposes.
-
-**⚠️ Important Notice**: 
-- This is not financial advice
-- Past performance doesn't guarantee future results
-- Always consult with financial professionals before making investment decisions
-- Use this system at your own risk
-
-## 🔗 Links
-
-- **🐳 Docker Hub**: [leorigasaki535/stock-prediction-dashboard](https://hub.docker.com/r/leorigasaki535/stock-prediction-dashboard)
-- **📊 Interactive Demo**: `docker run -p 8501:8501 -e SERVICE_TYPE=dashboard leorigasaki535/stock-prediction-dashboard:latest`
-- **🔗 API Documentation**: `docker run -p 8000:8000 -e SERVICE_TYPE=api leorigasaki535/stock-prediction-api:latest`
-
----
 
 <div align="center">
 
-**⭐ Star this repository if you find it useful!**
-
-[![GitHub stars](https://img.shields.io/github/stars/LeoRigasaki/stock-market-prediction-engine?style=social)](https://github.com/LeoRigasaki/stock-market-prediction-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/leorigasaki535/stock-prediction-dashboard)](https://hub.docker.com/r/leorigasaki535/stock-prediction-dashboard)
-
-**Built with fun for the data science and finance community**
 
 </div>
