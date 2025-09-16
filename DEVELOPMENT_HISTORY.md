@@ -323,29 +323,3 @@ This 16-day development journey demonstrates comprehensive data science and soft
 - **Deployment Ready**: Containerized system with one-command setup
 
 The system's 4.25 Sharpe ratio and professional architecture demonstrate both technical competence and practical business application, making it a compelling demonstration of machine learning engineering capabilities.
-
----
-
-## 🐳 Docker Hub Deployment
-
-**Live Demo Commands:**
-```bash
-# Interactive Dashboard
-docker run -p 8501:8501 -e SERVICE_TYPE=dashboard leorigasaki535/stock-prediction-dashboard:latest
-
-# REST API
-docker run -p 8000:8000 -e SERVICE_TYPE=api leorigasaki535/stock-prediction-api:latest
-
-# Complete System
-curl -O https://raw.githubusercontent.com/LeoRigasaki/Stock-Engine/main/docker-compose-public.yml
-docker-compose -f docker-compose-public.yml up
-```
-
-**Portfolio Links:**
-- **Dashboard**: https://hub.docker.com/r/leorigasaki535/stock-prediction-dashboard
-- **API**: https://hub.docker.com/r/leorigasaki535/stock-prediction-api
-- **GitHub**: https://github.com/LeoRigasaki/Stock-Engine
-
----
-
-*Built with Python, Docker, FastAPI, Streamlit, XGBoost, LightGBM, and professional software engineering practices.*
