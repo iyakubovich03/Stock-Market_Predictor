@@ -3,27 +3,25 @@
 > **Advanced Machine Learning System for Real-Time Stock Market Analysis and Prediction**
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
-[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://hub.docker.com/r/leorigasaki535/stock-prediction-dashboard)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-green.svg)](https://github.com/LeoRigasaki/Stock-Engine)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## 🚀 One-Command Demo
 
 ### **Interactive Dashboard (Recommended)**
 ```bash
-docker run -p 8501:8501 -e SERVICE_TYPE=dashboard leorigasaki535/stock-prediction-dashboard:latest
+docker run -p 8501:8501 -e SERVICE_TYPE=dashboard iyakubovich3/stock-prediction-dashboard:latest
 ```
 **Then visit:** http://localhost:8501
 
 ### **REST API with Swagger Docs**
 ```bash
-docker run -p 8000:8000 -e SERVICE_TYPE=api leorigasaki535/stock-prediction-api:latest
+docker run -p 8000:8000 -e SERVICE_TYPE=api iyakubovich3/stock-prediction-api:latest
 ```
 **Then visit:** http://localhost:8000/docs
 
 ### **Complete System**
 ```bash
-curl -O https://raw.githubusercontent.com/LeoRigasaki/Stock-Engine/main/docker-compose-public.yml
+curl -O https://raw.githubusercontent.com/iyakubovich3/Stock-Engine/main/docker-compose-public.yml
 docker-compose -f docker-compose-public.yml up
 ```
 
